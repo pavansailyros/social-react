@@ -1,18 +1,19 @@
 
 .body {
-    /* background-image: url(https://media.istockphoto.com/id/1360927961/photo/abstract-background-with-interweaving-of-colored-lines-and-dots-network-connection-structure.jpg?s=612x612&w=0&k=20&c=UTu0m3kCMm6f1kien9TNCrFtliESKUMrAeyKkI5s56I=); */
+  
     background-size: cover;
     height: 100vh;
     margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: skyblue;
 }
 
 .login-container {
-    max-width: 400px;
-    padding: 45px;
-    border: 1px solid #7a7979;
+    max-width: 500px;
+    padding: 45px 45px 50px 45px;
+    border: 1px solid #010101;
     border-radius: 5px;
     background-color: rgba(255, 255, 255, 0.6);
 }
