@@ -1,18 +1,29 @@
-import { useState, createContext, useContext } from "react";
-import Login from "./Login";
-import Home from "./Home";
-export const UserContext = createContext();
+import React, {useContext}  from 'react'
+import { UserContext } from './components/UserContext/Usercontext'
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import Home from './components/home/Home'
+import Login from './components/user/Login'
+import Register from './components/user/Register'
+import Feeds from './components/feeds/Feeds';
+import Albums from './components/albums/Albums';
+
+
+// We should call login comp and register 
 export default function App() {
-  const [user, setUser] = useState("John");
-  const [flag, setFlag] = useState(0);
- 
+    const  {flag, setFlag} =useContext(UserContext);
+
   return (
-    <>
-      <UserContext.Provider value={{ user, setUser, flag, setFlag } }>
-       
-        {flag==0||flag==1?<Login/>:<Home/>}
-     
-      </UserContext.Provider>
-    </>
-  );
+    <div>
+        <Router>
+        {flag == 0 || flag==2 ? <Login/>:<Home />}
+        {flag ===2 && <Register/>}
+        
+        <Routes>
+            <Route path="/feeds" element={<Feeds />}></Route>
+            <Route path="/albums" element={<Albums />}></Route>
+        </Routes>
+        </Router>
+        
+    </div>
+  )
 }

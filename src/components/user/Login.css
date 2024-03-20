@@ -1,0 +1,43 @@
+
+.body {
+    /* background-image: url(https://media.istockphoto.com/id/1360927961/photo/abstract-background-with-interweaving-of-colored-lines-and-dots-network-connection-structure.jpg?s=612x612&w=0&k=20&c=UTu0m3kCMm6f1kien9TNCrFtliESKUMrAeyKkI5s56I=); */
+    background-size: cover;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container {
+    max-width: 400px;
+    padding: 45px;
+    border: 1px solid #7a7979;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.login-input {
+    width: 100%;
+    margin-top: 10px;
+    padding: 13px;
+    border: 1px solid #e9e5e5;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.login-button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #65a9f1;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+    background-color: #073c75;
+}
